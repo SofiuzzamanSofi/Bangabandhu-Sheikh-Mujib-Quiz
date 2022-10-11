@@ -1,0 +1,9 @@
+.active {
+    background-color: aqua;
+    color: black;
+}
+
+a:hover {
+    background-color: aqua;
+    color: black;
+}
