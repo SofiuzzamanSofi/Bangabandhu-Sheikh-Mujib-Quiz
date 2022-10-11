@@ -10,7 +10,7 @@ import Main from "./Main";
 const router = createBrowserRouter([
     {
         path: '/', element: <Main />, errorElement: <ErrorPage />, children: [
-            { path: '/', element: <About /> },
+            // { path: '/', element: <About /> },
             { path: 'statistics', element: <Statistics /> }
         ]
     }
