@@ -9,7 +9,7 @@ const Quiz = ({ quiz }) => {
                 <img className='bg-zinc-200 rounded  m-1' src={logo} alt="" />
                 <div className='flex justify-between text-xl font-bold mx-2'>
                     <p>{name}</p>
-                    <p>{total}</p>
+                    <p> Total Questions: {total}</p>
                 </div>
                 <button className='hover:cursor-pointer hover:bg-green-700 bg-rose-700 py-4 w-full rounded font-bold'>Play Quiz</button>
 

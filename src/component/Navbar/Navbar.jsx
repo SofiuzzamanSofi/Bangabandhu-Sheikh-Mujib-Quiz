@@ -31,8 +31,6 @@ const Navbar = () => {
                 <NavLink className="mx-2  py-3 px-10 font-bold rounded" to="statistics">Statistics</NavLink>
                 <NavLink className="mx-2  py-3 px-10 font-bold rounded" to="subjects">Subjects</NavLink>
                 <NavLink className="mx-2  py-3 px-10 font-bold rounded" to="blog">Blog</NavLink>
-
-
             </div>
         </div>
     );

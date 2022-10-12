@@ -11,8 +11,7 @@ const Root = () => {
 
     return (
         <QuizContext.Provider value={quizzes}>
-            <div className='bg-cyan-800'>
-
+            <div className='bg-cyan-900'>
                 <Navbar />
                 <Outlet />
                 <Footer />
