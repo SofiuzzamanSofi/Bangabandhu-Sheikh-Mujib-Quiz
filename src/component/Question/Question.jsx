@@ -6,10 +6,10 @@ import Options from '../Options/Options';
 
 
 const Question = ({ allQuestion }) => {
+    console.log(allQuestion);
     const [open, setOpen] = useState(false);
-    const { correctAnswer, question, options } = allQuestion;
+    const { correctAnswer, question, options, num } = allQuestion;
     let questionsss = question.replace(/<\/?[^>]+(>|$)/g, '');
-    console.log(options);
 
     const openClosedIcon = (id) => {
         setOpen(!open)
@@ -17,7 +17,7 @@ const Question = ({ allQuestion }) => {
         setOpen(!open)
     }
 
-    let num = 1;
+
     const writeAns = (option, correctAnswer) => {
         if (option === correctAnswer) {
             toast.info(`Correct Ans: ${option} `, { autoClose: 500 })
@@ -37,7 +37,7 @@ const Question = ({ allQuestion }) => {
             <div className='  flex flex-col  gap-4 w-[320px] m-[10px] md:w-[450px] md:m-[25px]'>
                 <div className=''>
                     <div className='flex justify-between'>
-                        <p className='text-md text-yellow-500 '>Question No : {num + 1} </p>
+                        <p className='text-md text-yellow-500 '>Question No : {num} </p>
                         <Link onClick={() => openClosedIcon(correctAnswer)} className="text-white py-1.5 px-7 rounded " to="">
                             {open ? <EyeIcon className='h-6' /> : <EyeSlashIcon className='h-6' />}
                         </Link>

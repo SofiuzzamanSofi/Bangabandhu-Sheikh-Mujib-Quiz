@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useState } from 'react'; import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
 
@@ -11,11 +10,12 @@ const Questions = () => {
     const quizzess = useLoaderData();
     const { name, logo, questions, total } = quizzess.data;
 
-    // let num = 1;
-    // const question = 
-    // // const questions.map(allquestion=>{
 
-    // })
+    let numm = 1;
+    for (const element of questions) {
+        const numTo = numm++;
+        element["num"] = numTo;
+    }
 
 
     return (

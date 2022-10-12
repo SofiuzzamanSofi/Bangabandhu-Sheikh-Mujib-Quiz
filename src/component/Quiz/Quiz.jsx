@@ -17,7 +17,6 @@ const Quiz = ({ quiz }) => {
                     <p> Total Questions: {total}</p>
                 </div>
                 <Link to={`../question/${id}`} ><button className='hover:cursor-pointer hover:bg-green-700 bg-rose-700 py-4 w-full rounded font-bold'>Play Quiz</button></Link>
-
             </div>
         </div>
     );
