@@ -11,6 +11,14 @@ const Questions = () => {
     const quizzess = useLoaderData();
     const { name, logo, questions, total } = quizzess.data;
 
+    // const [num, setNum] = useState(0);
+    // const numFunction = () => {
+    //     setNum(num + 1)
+    // }
+    // console.log(num);
+    // console.log(quizzess.data);
+
+
     return (
         <div>
             <div className='text-center  text-white'>

@@ -13,7 +13,7 @@ const Statistics = () => {
 
     return (
         <div className='my-52 py-20 bg-white'>
-            <BarChart width={350} height={400} data={dataAll}>
+            <BarChart width={320} height={400} data={dataAll}>
                 <Bar dataKey="total" fill="#ff0095" />
                 <XAxis dataKey="name" />
                 <YAxis dataKey="total" />

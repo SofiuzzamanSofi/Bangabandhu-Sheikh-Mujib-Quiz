@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 
 const Quiz = ({ quiz }) => {
     const { id, logo, name, total } = quiz;
+
+
+
     return (
         <div className='rounded-md  bg-cyan-900 border w-[340px] md:w-[500px]'>
             <div className='  flex flex-col  gap-4 w-[320px] m-[10px] md:w-[450px] md:m-[25px]'>
