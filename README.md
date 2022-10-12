@@ -1,4 +1,4 @@
-Name of This Project: <h1 class="text-4xl font-bold"># Getting Started with Create React App<h1>
+Name of This Project: Bangabandhu Sheikh Mujib Quiz
 
 Live site link: https://bangabandhu-sheikh-mujib-quiz.netlify.app/
 
