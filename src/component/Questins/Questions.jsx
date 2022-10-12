@@ -24,7 +24,7 @@ const Questions = () => {
                 </div>
                 <div className='grid justify-items-center gap-y-16 lg:grid-cols-2 bg-cyan-400 py-14 text-left'>
                     {
-                        questions.map(allQuestion => <Question allQuestion={allQuestion} />)
+                        questions.map(allQuestion => <Question key={allQuestion.id} allQuestion={allQuestion} />)
                     }
                 </div>
             </div>
