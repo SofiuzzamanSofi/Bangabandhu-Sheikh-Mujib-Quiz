@@ -4,9 +4,9 @@ const Quiz = ({ quiz }) => {
     const { id, logo, name, total } = quiz
     console.log(quiz)
     return (
-        <div className='rounded-md  bg-cyan-900 border w-[450px]'>
-            <div className=' w-96 flex flex-col m-[32px] gap-4'>
-                <img className='bg-zinc-200 rounded  m-1' src={logo} alt="" />
+        <div className='rounded-md  bg-cyan-900 border w-[340px] md:w-[500px]'>
+            <div className='  flex flex-col  gap-4 w-[320px] m-[10px] md:w-[450px] md:m-[25px]'>
+                <img className='bg-zinc-900 rounded  m-1' src={logo} alt="" />
                 <div className='flex justify-between text-xl font-bold mx-2'>
                     <p>{name}</p>
                     <p> Total Questions: {total}</p>
