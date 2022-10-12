@@ -11,12 +11,11 @@ const Questions = () => {
     const quizzess = useLoaderData();
     const { name, logo, questions, total } = quizzess.data;
 
-    // const [num, setNum] = useState(0);
-    // const numFunction = () => {
-    //     setNum(num + 1)
-    // }
-    // console.log(num);
-    // console.log(quizzess.data);
+    // let num = 1;
+    // const question = 
+    // // const questions.map(allquestion=>{
+
+    // })
 
 
     return (

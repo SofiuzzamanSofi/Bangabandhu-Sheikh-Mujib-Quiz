@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Tooltip, XAxis, YAxis } from 'recharts';
 import { QuizContext } from '../Root/Root';
 
 
@@ -9,7 +9,7 @@ const Statistics = () => {
 
     const { data } = useContext(QuizContext)
     let dataAll = data.data;
-    console.log(dataAll);
+
 
     return (
         <div className='my-52 py-20 bg-white'>

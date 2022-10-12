@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import Options from '../Options/Options';
 
 
-const Question = ({ allQuestion, }) => {
+const Question = ({ allQuestion }) => {
     const [open, setOpen] = useState(false);
     const { correctAnswer, question, options } = allQuestion;
     let questionsss = question.replace(/<\/?[^>]+(>|$)/g, '');
@@ -17,14 +17,17 @@ const Question = ({ allQuestion, }) => {
         setOpen(!open)
     }
 
-    const writeAns = (id) => {
+    let num = 1;
+    const writeAns = (option, correctAnswer) => {
+        if (option === correctAnswer) {
+            toast.info(`Correct Ans: ${option} `, { autoClose: 500 })
+        }
+        else {
+            toast.warn(`Wrong Ans: ${option} `, { autoClose: 500 })
+        }
 
-        toast.info(`Correct Ans:  `, { autoClose: 500 })
 
     }
-
-
-
 
 
 
@@ -34,7 +37,7 @@ const Question = ({ allQuestion, }) => {
             <div className='  flex flex-col  gap-4 w-[320px] m-[10px] md:w-[450px] md:m-[25px]'>
                 <div className=''>
                     <div className='flex justify-between'>
-                        <p className='text-md text-yellow-500 '>Question No : </p>
+                        <p className='text-md text-yellow-500 '>Question No : {num + 1} </p>
                         <Link onClick={() => openClosedIcon(correctAnswer)} className="text-white py-1.5 px-7 rounded " to="">
                             {open ? <EyeIcon className='h-6' /> : <EyeSlashIcon className='h-6' />}
                         </Link>
@@ -45,7 +48,7 @@ const Question = ({ allQuestion, }) => {
                     <div className='text-sm'>
                         <p className=' text-yellow-500 '>Ans:</p>
                         {
-                            options.map(option => <Options option={option} />)
+                            options.map(option => <Options correctAnswer={correctAnswer} writeAns={writeAns} key={option.id} option={option} />)
 
 
 
