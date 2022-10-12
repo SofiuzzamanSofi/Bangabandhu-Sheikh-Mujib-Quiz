@@ -6,11 +6,12 @@ export const QuizContext = createContext('quiz')
 
 const Root = () => {
 
-    const quizzes = useLoaderData();
+    const { data, questionsLoaders } = useLoaderData();
+
 
 
     return (
-        <QuizContext.Provider value={quizzes}>
+        <QuizContext.Provider value={{ data, questionsLoaders }}>
             <div className='bg-cyan-900'>
                 <Navbar />
                 <Outlet />

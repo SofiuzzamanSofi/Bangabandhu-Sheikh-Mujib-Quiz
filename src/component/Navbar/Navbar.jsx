@@ -27,10 +27,10 @@ const Navbar = () => {
             </div>
             <div className={`bg-slate-900   flex flex-col md:hidden absolute duration-1000 ease-in-out ${open ? 'top-15 right-0' : 'top-[-1000px]'}`} >
 
-                <NavLink className="mx-2  py-3 px-10 font-bold rounded" to="topic">Topic</NavLink>
-                <NavLink className="mx-2  py-3 px-10 font-bold rounded" to="statistics">Statistics</NavLink>
-                <NavLink className="mx-2  py-3 px-10 font-bold rounded" to="subjects">Subjects</NavLink>
-                <NavLink className="mx-2  py-3 px-10 font-bold rounded" to="blog">Blog</NavLink>
+                <NavLink onClick={() => setOpen(!open)} className="mx-2  py-3 px-10 font-bold rounded" to="topic">Topic</NavLink>
+                <NavLink onClick={() => setOpen(!open)} className="mx-2  py-3 px-10 font-bold rounded" to="statistics">Statistics</NavLink>
+                <NavLink onClick={() => setOpen(!open)} className="mx-2  py-3 px-10 font-bold rounded" to="subjects">Subjects</NavLink>
+                <NavLink onClick={() => setOpen(!open)} className="mx-2  py-3 px-10 font-bold rounded" to="blog">Blog</NavLink>
             </div>
         </div>
     );

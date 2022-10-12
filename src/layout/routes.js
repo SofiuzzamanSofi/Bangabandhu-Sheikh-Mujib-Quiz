@@ -6,7 +6,7 @@ import Questions from "../component/Questins/Questions";
 import Root from "../component/Root/Root";
 import Statistics from "../component/Statistics/Statistics";
 import Topic from "../component/Topic/Topic";
-import allTypeApi from "../Loaders/AllTypeApi";
+import { allTypeApi, questionsLoaders } from "../Loaders/AllTypeApi";
 
 
 
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             { path: 'statistics', element: <Statistics /> },
             { path: 'statistics', element: <Statistics /> },
             { path: 'blog', element: <Blog /> },
-            { path: 'question/:id', element: <Questions /> },
+            { path: 'question/:id', element: <Questions />, loader: questionsLoaders }
         ]
     }
 ])
